@@ -1,0 +1,80 @@
+* {
+  position: absolute;
+  
+}
+body {  
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+start {  
+    
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  border: 3px dashed pink;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow Bold', 'Arial', 'sans-serif';
+  color: white; 
+  padding: 20px;
+  position: fixed;
+  width: 50%;
+  left: 25%; 
+  top: 70%; 
+}
+
+start:hover { 
+transition: background-color .5s;  
+background-color:rgb(224, 73, 98);
+}
+
+start:active {
+background-color: pink;
+box-shadow: 0 5px rgb(36, 77, 48);
+transform: translateY(4px);
+}
+
+cat {
+  background-image: url(../assets/cat_black.png);
+  width: 320px;
+  height: 296px;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+
+}
+witch {
+  background-image: url(../assets/8-bitMeee.png);
+  width: 350px;
+  height: 400px;
+  
+}
+
+counter{
+  font-size: 50px;
+  color:white;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow Bold', 'Arial', 'sans-serif';
+  
+}
+
+background {
+  background-image: url(../assets/GAME_ROOM_1.png);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:block;
+
+}
+audio {  
+  display: block;
+  background-color: purple;
+  position: absolute;
+  background-image: url(../img/Thanos.png);
+  width: 25%;
+  left: 36%; 
+  top: 90%; 
+
+}
+
