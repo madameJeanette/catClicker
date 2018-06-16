@@ -132,6 +132,7 @@ var PlayScreen = (function () {
         this.witch = new Witch("witch", 500, 337);
         this.witch.div.addEventListener("click", function () { return _this.counter(); });
         this.count = new Counter("counter", this.screenW / 2, 100);
+        this.cat = new Cat("empty", 0, 0);
     }
     PlayScreen.prototype.counter = function () {
         var _this = this;

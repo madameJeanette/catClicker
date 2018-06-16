@@ -6,9 +6,7 @@ class Music extends GameObject{
       
 
       
-      //<audio controls autoplay id="muziek">
-      //<source src="audio/funkyBackgroundMusic.wav" type="audio/mpeg">
-      //</audio>
+      
     }
   
     public update() {

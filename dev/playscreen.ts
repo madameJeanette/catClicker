@@ -40,7 +40,8 @@ class PlayScreen {
 
     this.count = new Counter("counter", this.screenW/2, 100)
     //----------------------------------->create counter
-   
+   //create empty cat
+   this.cat = new Cat("empty", 0,0)
   }
 
   counter() {
