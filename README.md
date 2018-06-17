@@ -237,6 +237,7 @@ class PlayScreen {
 ------------------------------------------------------------------------------------------------------------------------------------
 
  • Een klassendiagram van de game.
+ 1eed60dd4c093fa6230727a3f069c0b157bb814f
  
  
  • Een link naar de peer review die in week 6 is gedaan. 
