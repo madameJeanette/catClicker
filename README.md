@@ -237,7 +237,7 @@ class PlayScreen {
 ------------------------------------------------------------------------------------------------------------------------------------
 
  • Een klassendiagram van de game.
-https://github.com/madameJeanette/catClicker/blob/master/Copy%20of%20catClicker%20class%20diagram.xml
+https://github.com/madameJeanette/catClicker/blob/master/Class%20Diagram%20cat%20Clicker.png
  
  
  • Een link naar de peer review die in week 6 is gedaan. 
