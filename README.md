@@ -4,6 +4,7 @@ Become the greatest crazy cat lady!
 Het project maakt gebruik van deze OOP principes.
 
 • Classes
+
 Waar is het toegepast, en waarom is het op die plek toegepast:
 
 "Classes inherit functionality and objects are built from these classes"
@@ -15,6 +16,7 @@ Hierdoor kun je meerdere witches aanroepen met andere x en y coordinaten in de p
 code voorbeelden: Witch.ts:
 
 ///<reference path="gameobjects.ts"/>
+
 class Witch extends GameObject {
     constructor(el: any, x: number, y: number) {
         super(el, x, y);
@@ -43,6 +45,7 @@ class PlayScreen {
 ------------------------------------------------------------------------------------------------------------------------------------
 
 • Encapsulation
+
 Waar is het toegepast, en waarom is het op die plek toegepast:
 
 Ik heb encapsulation toegepast in de playscreen.ts. Alle objecten die ik alleen in de playscreen.ts gebruik staan op private, zodat andere classes ze niet aan kunnen roepen. Wanneer ik onderdelen van classes door andere classes aan wil roepen, zoals de witch class onderdelen in de playscreen, dan gebruik ik public.
