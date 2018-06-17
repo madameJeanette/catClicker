@@ -4,7 +4,7 @@ Become the greatest crazy cat lady!
 Het project maakt gebruik van deze OOP principes.
 
 • Classes
-
+------------------------------------------------------------------------------------------------------------------------------------
 Waar is het toegepast, en waarom is het op die plek toegepast:
 
 "Classes inherit functionality and objects are built from these classes"
@@ -26,7 +26,7 @@ class Witch extends GameObject {
     }
 }
 
-------------------------------------------------------------------------------------------------------------------------------------
+
 Playscreen.ts:
 ------------------------------------------------------------------------------------------------------------------------------------
 
@@ -42,9 +42,9 @@ class PlayScreen {
   //create witch
   this.witch = new Witch("witch", 500, 337)
  
-------------------------------------------------------------------------------------------------------------------------------------
 
 • Encapsulation
+------------------------------------------------------------------------------------------------------------------------------------
 
 Waar is het toegepast, en waarom is het op die plek toegepast:
 
@@ -95,12 +95,9 @@ class PlayScreen {
     
     this.witch = new Witch("witch", 500, 337)
     this.witch.div.addEventListener("click", () => this.counter())
-    
-    //---> add event listener witch
-
     this.count = new Counter("counter", this.screenW/2, 100)
    
-   //----------------------------------->create counter
+
    //create empty cat
   
   this.cat = new Cat("empty", 0,0)
@@ -141,20 +138,21 @@ class PlayScreen {
   }
 }
 
-------------------------------------------------------------------------------------------------------------------------------------
+
 • Composition 
+------------------------------------------------------------------------------------------------------------------------------------
 uitleg: waar is het toegepast, en waarom is het op die plek toegepast:
 
 Ik heb een witch, counter en cat class die ik aanroep in de playscreen.ts. 
 
 ------------------------------------------------------------------------------------------------------------------------------------
 class PlayScreen {
-  public game: Game;
+public game: Game
 
   public witch: Witch
   public cat: Cat
   public count: Counter
-  private tooMuchCats: number = 25;
+  private tooMuchCats: number = 25
   public background: Background
   
   
@@ -166,10 +164,10 @@ Hierdoor kan ik de variabelen samen in een functie gebruiken in de playscreen.ts
 
 counter() {
 
-    this.randomNumW = Math.random();
+    this.randomNumW = Math.random()
     this.randomNumH = Math.random()
-    this.xpos = (this.screenW * this.randomNumW);
-    this.ypos = (this.screenH * this.randomNumH);
+    this.xpos = (this.screenW * this.randomNumW)
+    this.ypos = (this.screenH * this.randomNumH)
     this.cat = new Cat("cat", this.xpos, this.ypos)
     this.cat.div.addEventListener("click", () => this.deleteCat())  
     this.count.num++   
@@ -183,19 +181,22 @@ counter() {
    
   }
 
-  clickedSoMuch() {  //if cat  > then 25 = game Over;
+  clickedSoMuch() {  //if cat  > then 25 = game Over
     this.game.emptyScreen();
     this.game.showGameOver(new GameOver(this.game))
   }
   
-------------------------------------------------------------------------------------------------------------------------------------
+
 • Inheritance 
+------------------------------------------------------------------------------------------------------------------------------------
 Waar is het toegepast, en waarom is het op die plek toegepast:
 Ik heb een gameobject gemaakt die met inheritance  variabelen en functies doorgeeft aan de witch, de counter en de background.ts
 Hierdoor kun je meerdere objecten divs maken met verschilende x en y coordinaten in de playscreen.ts zonder voor elke class een aparte div te creeren en x en y coordinaat te verklaren, omdat deze al doorgegeven wordt door de gameobject.ts.
 
 code voorbeelden:
 
+gameobject.ts
+------------------------------------------------------------------------------------------------------------------------------------
 class GameObject {
     public x: number
     public y: number
@@ -208,38 +209,35 @@ class GameObject {
         this.div = document.createElement(el)
         document.body.appendChild(this.div)
         
-------------------------------------------------------------------------------------------------------------------------------------
-Witch.ts:
 
-///<reference path="gameobjects.ts"/>
+witch.ts:
+------------------------------------------------------------------------------------------------------------------------------------
 class Witch extends GameObject {
     constructor(el: any, x: number, y: number) {
         super(el, x, y);
         this.update()
-
     }
     public update() {
         this.div.style.transform = `translate(${this.x}px, ${this.y}px`
     }
 }
 
-------------------------------------------------------------------------------------------------------------------------------------
-Playscreen.ts:
 
+Playscreen.ts:
+------------------------------------------------------------------------------------------------------------------------------------
 class PlayScreen {
   public game: Game;
-
   public witch: Witch
  
   constructor(g: Game) {
 
-  this.game = g;
-  //----------------------------->create witch
+  this.game = g
   this.witch = new Witch("witch", 500, 337)
  
 ------------------------------------------------------------------------------------------------------------------------------------
 
  • Een klassendiagram van de game.
+ 
  
  • Een link naar de peer review die in week 6 is gedaan. 
  https://github.com/madameJeanette/fluffyGameWork/issues/2
