@@ -15,8 +15,6 @@ Hierdoor kun je meerdere witches aanroepen met andere x en y coordinaten in de p
 ------------------------------------------------------------------------------------------------------------------------------------
 code voorbeelden: Witch.ts:
 
-///<reference path="gameobjects.ts"/>
-
 class Witch extends GameObject {
     constructor(el: any, x: number, y: number) {
         super(el, x, y);
@@ -30,8 +28,10 @@ class Witch extends GameObject {
 
 ------------------------------------------------------------------------------------------------------------------------------------
 Playscreen.ts:
+------------------------------------------------------------------------------------------------------------------------------------
 
 class PlayScreen {
+
   public game: Game;
 
   public witch: Witch
@@ -39,7 +39,7 @@ class PlayScreen {
   constructor(g: Game) {
 
   this.game = g;
-  //----------------------------->create witch
+  //create witch
   this.witch = new Witch("witch", 500, 337)
  
 ------------------------------------------------------------------------------------------------------------------------------------
