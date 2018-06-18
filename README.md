@@ -19,7 +19,6 @@ class Witch extends GameObject {
     constructor(el: any, x: number, y: number) {
         super(el, x, y);
         this.update()
-
     }
     public update() {
         this.div.style.transform = `translate(${this.x}px, ${this.y}px`
@@ -31,13 +30,10 @@ Playscreen.ts:
 ------------------------------------------------------------------------------------------------------------------------------------
 
 class PlayScreen {
-
   public game: Game;
-
   public witch: Witch
- 
-  constructor(g: Game) {
 
+constructor(g: Game) {
   this.game = g;
   //create witch
   this.witch = new Witch("witch", 500, 337)
@@ -47,7 +43,6 @@ class PlayScreen {
 ------------------------------------------------------------------------------------------------------------------------------------
 
 Waar is het toegepast, en waarom is het op die plek toegepast:
-
 Ik heb encapsulation toegepast in de playscreen.ts. Alle objecten die ik alleen in de playscreen.ts gebruik staan op private, zodat andere classes ze niet aan kunnen roepen. Wanneer ik onderdelen van classes door andere classes aan wil roepen, zoals de witch class onderdelen in de playscreen, dan gebruik ik public.
 
 Encapsulation betekent zoveel als inkapseling. In OO is elk object afgeschermd. Objecten kunnen elkaar niet 'zien'. Ze kunnen wel allerlei dingen uitwisselen, alsof ze via een luikje met elkaar in verbinding staan.
@@ -59,52 +54,41 @@ protected - Only the current class and subclasses (and sometimes also same-packa
 
 public - Any class can refer to the field or call the method.
 
-------------------------------------------------------------------------------------------------------------------------------------
 class PlayScreen {
-  public game: Game;
-
+  public game: Game
   public witch: Witch
   public cat: Cat
   public count: Counter
-  private tooMuchCats: number = 25;
+  private tooMuchCats: number = 25
   public background: Background
-
-
-  private ypos: number;
-  private xpos: number;
-  private screenW: number;
-  private screenH: number;
-  private randomNumW: number;
-  private randomNumH: number;
-
-
+  private ypos: number
+  private xpos: number
+  private screenW: number
+  private screenH: number
+  private randomNumW: number
+  private randomNumH: number
+  
   constructor(g: Game) {
-    this.screenW = window.innerWidth - 320;
-    this.screenH = window.innerHeight - 296;
-    this.randomNumW = Math.random();
+    this.screenW = window.innerWidth - 320
+    this.screenH = window.innerHeight - 296
+    this.randomNumW = Math.random()
     this.randomNumH = Math.random()
-    this.xpos = (this.screenW * this.randomNumW);
-    this.ypos = (this.screenH * this.randomNumH);
-    this.game = g;
+    this.xpos = (this.screenW * this.randomNumW)
+    this.ypos = (this.screenH * this.randomNumH)
+    this.game = g
 
     //----------------------------->create background
    
    this.background = new Background("background", 0, 0)
-
-    //----------------------------->create witch
-    
-    this.witch = new Witch("witch", 500, 337)
-    this.witch.div.addEventListener("click", () => this.counter())
-    this.count = new Counter("counter", this.screenW/2, 100)
-   
+   this.witch = new Witch("witch", 500, 337)
+   this.witch.div.addEventListener("click", () => this.counter())
+   this.count = new Counter("counter", this.screenW/2, 100)
 
    //create empty cat
   
-  this.cat = new Cat("empty", 0,0)
-  }
+   this.cat = new Cat("empty", 0,0)
 
-  counter() {
-
+   counter() {
     this.randomNumW = Math.random();
     this.randomNumH = Math.random()
     this.xpos = (this.screenW * this.randomNumW);
@@ -116,7 +100,6 @@ class PlayScreen {
     console.log("1up")
     this.count.div.innerHTML = ("You have " + this.count.num + " cats");//add text 2 counter
     //add eventlistener delete cat
-
 
   }
   deleteCat() {
@@ -132,9 +115,7 @@ class PlayScreen {
 
   public update() {
    
-    if (this.count.num > this.tooMuchCats) { this.clickedSoMuch() };
-
-
+   if (this.count.num > this.tooMuchCats) { this.clickedSoMuch() };
   }
 }
 
@@ -145,7 +126,6 @@ uitleg: waar is het toegepast, en waarom is het op die plek toegepast:
 
 Ik heb een witch, counter en cat class die ik aanroep in de playscreen.ts. 
 
-------------------------------------------------------------------------------------------------------------------------------------
 class PlayScreen {
 public game: Game
 
@@ -159,20 +139,18 @@ public game: Game
 ------------------------------------------------------------------------------------------------------------------------------------
 Hierdoor kan ik de variabelen samen in een functie gebruiken in de playscreen.ts
 
-------------------------------------------------------------------------------------------------------------------------------------
-
 
 counter() {
 
-    this.randomNumW = Math.random()
-    this.randomNumH = Math.random()
-    this.xpos = (this.screenW * this.randomNumW)
-    this.ypos = (this.screenH * this.randomNumH)
-    this.cat = new Cat("cat", this.xpos, this.ypos)
-    this.cat.div.addEventListener("click", () => this.deleteCat())  
-    this.count.num++   
-    console.log("1up")
-    this.count.div.innerHTML = ("You have " + this.count.num + " cats");//add text 2 counter
+   this.randomNumW = Math.random()
+   this.randomNumH = Math.random()
+   this.xpos = (this.screenW * this.randomNumW)
+   this.ypos = (this.screenH * this.randomNumH)
+   this.cat = new Cat("cat", this.xpos, this.ypos)
+   this.cat.div.addEventListener("click", () => this.deleteCat())  
+   this.count.num++   
+   console.log("1up")
+   this.count.div.innerHTML = ("You have " + this.count.num + " cats");//add text 2 counter
 
   }
   deleteCat() {
@@ -202,8 +180,7 @@ class GameObject {
     public y: number
     public div: HTMLElement
 
-
-    constructor(el: any, x: number, y: number) {
+   constructor(el: any, x: number, y: number) {
         this.x = x
         this.y = y
         this.div = document.createElement(el)
