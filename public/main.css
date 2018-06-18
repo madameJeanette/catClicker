@@ -1,12 +1,24 @@
+
 * {
   position: absolute;
   
 }
 body {  
   background-color: black;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
+@keyframes animation{
+
+  0% {
+    transform: translateY();
+  }
+  
+  100% {
+    transform: translateY(337px);
+  }
+}
+
 start {  
     
   margin: auto;
@@ -39,7 +51,8 @@ cat {
   height: 296px;
   background-repeat: no-repeat;
   display: block;
-  position: absolute;
+  animation:animation 4s ease-in-out infinite alternate;
+  
 
 }
 witch {
@@ -65,8 +78,9 @@ background {
   background-repeat: no-repeat;
   background-size: cover;
   display:block;
-
-}
+  overflow: hidden;
+  }
+  
 audio {  
   display: block;
   background-color: purple;

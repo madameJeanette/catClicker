@@ -106,20 +106,10 @@ var GameOver = (function () {
     };
     return GameOver;
 }());
-var Music = (function (_super) {
-    __extends(Music, _super);
-    function Music(el, x, y) {
-        return _super.call(this, el, x, y) || this;
-    }
-    Music.prototype.update = function () {
-        this.div.style.transform = "translate(" + this.x + "px, " + this.y + "px";
-    };
-    return Music;
-}(GameObject));
 var PlayScreen = (function () {
     function PlayScreen(g) {
         var _this = this;
-        this.tooMuchCats = 45;
+        this.tooMuchCats = 25;
         this.screenW = window.innerWidth - 320;
         this.screenH = window.innerHeight - 296;
         this.randomNumW = Math.random();
@@ -127,8 +117,7 @@ var PlayScreen = (function () {
         this.xpos = (this.screenW * this.randomNumW);
         this.ypos = (this.screenH * this.randomNumH);
         this.game = g;
-        this.background = new Background("background", 0, 0);
-        this.music = new Music("music", 0, 0);
+        this.background = new Background("background", -8, -8);
         this.witch = new Witch("witch", 500, 337);
         this.witch.div.addEventListener("click", function () { return _this.counter(); });
         this.count = new Counter("counter", this.screenW / 2, 100);
