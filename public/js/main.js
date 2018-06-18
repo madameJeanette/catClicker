@@ -93,6 +93,7 @@ var GameOver = (function () {
     function GameOver(g) {
         var _this = this;
         this.game = g;
+        this.background = new Background("gameOverBack", (window.innerWidth / 2) - 657, -8);
         this.element = document.createElement("START");
         document.body.appendChild(this.element);
         this.element.addEventListener("click", function () { return _this.clicked(); });
@@ -155,6 +156,7 @@ var StartMenu = (function () {
     function StartMenu(g) {
         var _this = this;
         this.game = g;
+        this.background = new Background("playscreenBack", (window.innerWidth / 2) - 657, -8);
         this.element = document.createElement("start");
         document.body.appendChild(this.element);
         this.element.addEventListener("click", function () { return _this.clicked(); });

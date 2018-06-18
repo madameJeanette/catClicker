@@ -80,6 +80,26 @@ background {
   display:block;
   overflow: hidden;
   }
+
+playscreenBack {
+  background-image: url(../assets/startScreen.jpg);
+  height: 100vh;
+  width:1314px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:block;
+  }
+
+gameOverBack {
+  background-image: url(../assets/blackKitty.jpg);
+  height: 100vh;
+  width:1314px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:block;
+  }
   
 audio {  
   display: block;
