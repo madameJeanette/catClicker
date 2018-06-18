@@ -26,7 +26,7 @@ start {
   font-size: 30px;
   border: 3px dashed pink;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow Bold', 'Arial', 'sans-serif';
-  color: white; 
+  color: purple; 
   padding: 20px;
   position: fixed;
   width: 50%;
@@ -36,7 +36,7 @@ start {
 
 start:hover { 
 transition: background-color .5s;  
-background-color:rgb(224, 73, 98);
+background-color:pink;
 }
 
 start:active {
