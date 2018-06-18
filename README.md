@@ -1,5 +1,8 @@
 # catClicker
 Become the greatest crazy cat lady!
+Maak zo veel mogelijk magische katten.
+Maar pas op, als je er te veel maakt zullen de consequenties heel naar zijn....
+
 
 Het project maakt gebruik van deze OOP principes.
 
@@ -219,4 +222,7 @@ https://github.com/madameJeanette/catClicker/blob/master/Class%20Diagram%20cat%2
  
  • Een link naar de peer review die in week 6 is gedaan. 
  https://github.com/madameJeanette/fluffyGameWork/issues/2
+ 
+ • Een link naar online versie
+ https://stud.hosted.hr.nl/0872675/websites/catClicker/public/
  
