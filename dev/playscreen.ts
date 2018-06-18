@@ -4,9 +4,8 @@ class PlayScreen {
 
   public witch: Witch
   public cat: Cat
-  public music: Music
   public count: Counter
-  public tooMuchCats: number = 45;
+  private tooMuchCats: number = 25;
   public background: Background
 
 
@@ -28,9 +27,8 @@ class PlayScreen {
     this.game = g;
 
     //----------------------------->create background
-    this.background = new Background("background", 0, 0)
+    this.background = new Background("background", -8, -8)
     //----------------------------->sound
-    this.music = new Music("music", 0, 0)
 
 
     //----------------------------->create witch
@@ -57,7 +55,6 @@ class PlayScreen {
     console.log("1up")
     this.count.div.innerHTML = ("You have " + this.count.num + " cats");//add text 2 counter
     //add eventlistener delete cat
-
 
 
   }

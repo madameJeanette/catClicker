@@ -1,6 +1,6 @@
 class StartMenu {
-    protected element: HTMLElement
-    protected game: Game;
+    private element: HTMLElement
+    private game: Game;
 
     constructor(g: Game) {
         this.game = g;
