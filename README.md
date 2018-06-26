@@ -231,6 +231,9 @@ https://github.com/madameJeanette/catClicker/blob/master/Class%20Diagram%20cat%2
  Link naar de peer review die ik bij een klasgenoot heb gedaan:
  https://github.com/Brainilio/ThanosRunner/issues/1
  
+ Extra uitdaging uitleg:
+ 
  Als extra opdracht mocht je een api of library toevoegen. Een van deze api's die werd aangeboden in de modulewijzer was howler.js.
  Deze heb ik al voor de eerste inlever datum toegevoegd en zorgt voor de achtergrond muziek.
+ 
  
