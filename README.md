@@ -51,12 +51,12 @@ Ik heb encapsulation toegepast in de playscreen.ts. Alle objecten die ik alleen 
 Encapsulation betekent zoveel als inkapseling. In OO is elk object afgeschermd. Objecten kunnen elkaar niet 'zien'. Ze kunnen wel allerlei dingen uitwisselen, alsof ze via een luikje met elkaar in verbinding staan.
 code voorbeelden:
 
-```private - Only the current class will have access to the field or method.
+private - Only the current class will have access to the field or method.
 
 protected - Only the current class and subclasses (and sometimes also same-package classes) of this class will have access to the field or method.
 
 public - Any class can refer to the field or call the method.
-
+```
 class PlayScreen {
   public game: Game
   public witch: Witch
@@ -79,17 +79,17 @@ class PlayScreen {
     this.xpos = (this.screenW * this.randomNumW)
     this.ypos = (this.screenH * this.randomNumH)
     this.game = g
-```
+
     //----------------------------->create background
-   ```
+
    this.background = new Background("background", 0, 0)
    this.witch = new Witch("witch", 500, 337)
    this.witch.div.addEventListener("click", () => this.counter())
    this.count = new Counter("counter", this.screenW/2, 100)```
-```
+
    //create empty cat
-  
-  ``` this.cat = new Cat("empty", 0,0)
+   
+   this.cat = new Cat("empty", 0,0)
 
    counter() {
     this.randomNumW = Math.random();
