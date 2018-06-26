@@ -1,5 +1,6 @@
 # catClicker
 Become the greatest crazy cat lady!
+
 Make as many magical cats as you wish by clicking on the witch.
 But watch out, if you make to many cats the concequences will be horrible...
 
