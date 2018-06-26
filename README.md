@@ -229,7 +229,7 @@ https://github.com/madameJeanette/catClicker/blob/master/Class%20Diagram%20cat%2
  -------------
  https://github.com/Brainilio/ThanosRunner/issues/1
  
- • Een link naar online versie
+ • Link naar online versie
  -----------------
  https://stud.hosted.hr.nl/0872675/websites/catClicker/public/
  
