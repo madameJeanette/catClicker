@@ -139,7 +139,7 @@ public game: Game
   public background: Background
   ```
   
-------------------------------------------------------------------------------------------------------------------------------------
+
 Hierdoor kan ik de variabelen samen in een functie gebruiken in de playscreen.ts
 
 
@@ -222,15 +222,13 @@ https://github.com/madameJeanette/catClicker/blob/master/Class%20Diagram%20cat%2
  
  • Een link naar de peer review die in week 6 is gedaan. 
  https://github.com/madameJeanette/fluffyGameWork/issues/2
- 
+
+ •Link naar de peer review die ik bij Brainilio heb gedaan in week 6:
+ https://github.com/Brainilio/ThanosRunner/issues/1
  
  • Een link naar online versie
  https://stud.hosted.hr.nl/0872675/websites/catClicker/public/
  
- ----------------------------------------------
- Aanpassingen:
- Link naar de peer review die ik bij een klasgenoot heb gedaan:
- https://github.com/Brainilio/ThanosRunner/issues/1
  
  Extra uitdaging uitleg:
  -----------------------
