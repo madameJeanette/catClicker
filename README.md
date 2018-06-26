@@ -1,7 +1,12 @@
 # catClicker
 Become the greatest crazy cat lady!
-Maak zo veel mogelijk magische katten.
-Maar pas op, als je er te veel maakt zullen de consequenties heel naar zijn....
+Make as many magical cats as you wish by clicking on the witch.
+But watch out, if you make to many cats the concequences will be horrible...
+
+Wordt de grootste gekke kattenvrouw!
+
+Maak zo veel mogelijk magische katten door op de heks te klikken.
+Maar pas op, als je er te veel maakt zullen de consequenties vreselijk zijn....
 
 
 Het project maakt gebruik van deze OOP principes.
