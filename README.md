@@ -216,17 +216,21 @@ Playscreen.ts:
  ```
 ------------------------------------------------------------------------------------------------------------------------------------
 
- • Een klassendiagram van de game.
+ • Klassendiagram van de game
+ ------------------------------
 https://github.com/madameJeanette/catClicker/blob/master/Class%20Diagram%20cat%20Clicker.png
  
  
- • Een link naar de peer review die in week 6 is gedaan. 
+ •  Link naar de peer review die in week 6 is gedaan.
+ -----------
  https://github.com/madameJeanette/fluffyGameWork/issues/2
 
  •Link naar de peer review die ik bij Brainilio heb gedaan in week 6:
+ -------------
  https://github.com/Brainilio/ThanosRunner/issues/1
  
  • Een link naar online versie
+ -----------------
  https://stud.hosted.hr.nl/0872675/websites/catClicker/public/
  
  
