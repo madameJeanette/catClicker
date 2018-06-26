@@ -236,6 +236,29 @@ https://github.com/madameJeanette/catClicker/blob/master/Class%20Diagram%20cat%2
  -----------------------
  Als extra opdracht mocht je een externe library toevoegen. Een van de libraries die werd aangeboden in de modulewijzer was howler.js.
  Deze zorgt voor de achtergrond muziek.
+
+```
+ var sound = new Howl({
+    src: ["audio/funkyBackgroundMusic.wav"],
+    autoplay: true,
+    loop: true,
+    volume: 0.5,
+    onend: function() {
+      console.log("Finished!");
+    }
+  });
+  
+  sound.on("load", function() {
+    var startButton = document.getElementsByTagName("music")[0];
+    startButton.addEventListener("click", function() {
+      if (sound.playing()) {
+        sound.pause();
+      } else {
+        sound.play();
+      }
+    });
+  });
+  ```
  
  
  
