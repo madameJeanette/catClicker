@@ -234,7 +234,8 @@ https://github.com/madameJeanette/catClicker/blob/master/Class%20Diagram%20cat%2
  
  Extra uitdaging uitleg:
  -----------------------
- Als extra opdracht mocht je een api of library toevoegen. Een van deze api's die werd aangeboden in de modulewijzer was howler.js.
- Deze heb ik al voor de eerste inlever datum toegevoegd en zorgt voor de achtergrond muziek.
+ Als extra opdracht mocht je een externe library toevoegen. Een van de libraries die werd aangeboden in de modulewijzer was howler.js.
+ Deze zorgt voor de achtergrond muziek.
+ 
  
  
