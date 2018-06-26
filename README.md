@@ -223,6 +223,14 @@ https://github.com/madameJeanette/catClicker/blob/master/Class%20Diagram%20cat%2
  • Een link naar de peer review die in week 6 is gedaan. 
  https://github.com/madameJeanette/fluffyGameWork/issues/2
  
+ 
  • Een link naar online versie
  https://stud.hosted.hr.nl/0872675/websites/catClicker/public/
+ ----------------------------------------------
+ Aanpassingen:
+ Link naar de peer review die ik bij een klasgenoot heb gedaan:
+ https://github.com/Brainilio/ThanosRunner/issues/1
+ 
+ Als extra opdracht mocht je een api of library toevoegen. Een van deze api's die werd aangeboden in de modulewijzer was howler.js.
+ Deze heb ik al voor de eerste inlever datum toegevoegd en zorgt voor de achtergrond muziek.
  
